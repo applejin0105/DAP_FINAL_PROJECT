@@ -1,0 +1,6 @@
+*{background-color: black; padding-left: 5%; padding-right: 5%; font-family: 'Noto Sans KR', sans-serif; color: white; text-align: center;}
+h1{font-size: 70px;}
+h2{font-size: 50px; text-align: left;}
+ul{font-size: 35px; text-align: left; list-style: none; padding: 30px;}
+li{font-size: 35px; text-align: left;}
+#list th{border: 2px;}

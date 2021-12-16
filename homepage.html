@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+</head>
+
+<body>
+    <h1 style="font-size: 100px; padding-bottom: 10%;">롤 플레잉 게임을 이용 <br>
+        <name style="font-size: 60px;">자연선택 알고리즘을 통한 승률 예측 데이터 분석</name>
+    </h1>
+
+    <video src=""></video>
+
+    <h2 id="list">목차</h2>
+
+    <ul>
+        <a href="#list1" style="text-align: left;">개요</a> <br>
+        <a href="#list2" style="text-align: left;">목적</a> <br>
+        <a href="#list3" style="text-align: left;">데이터</a> <br>
+        <a href="#list4" style="text-align: left;">분석 결과</a> <br>
+        <a href="#list5" style="text-align: left;">마치며</a> <br>
+        <a href="#list6" style="text-align: left;">참고자료</a> <br>
+    </ul>
+
+    <h2 id="list1">개요</h2>
+    <article style="text-align: left; font-size: 30px;">
+        평소 게임을 즐겨하는 과정에서, 게임을 직접 만들 기회가 생겨 현재 게임을 제작중이다.
+        처음 시도해보는 만큼, 다양한 어려움을 해결해나가는 과정중인데, 그 중 가장 골치아픈 점이 몬스터의 AI 설계였다.
+        그러던 중 이번 기말 프로젝트와 더불어, 과거 디O인사이드 하OO톤 갤러리에서 보았던, 고2때 하스스톤으로 진화론 연구했던 썰.evolution라는 글이 떠오르게 되었고
+        이에 맞추어 평소 즐겨하던 'Darkest Dungeon'이라는 게임에 접목하여 인 게임의 봇(BOT)과 싸우는 모드를 이용, 최적의 조합과 그에 따른 벨런스를 맞추는 것을 목표로 이번 프로젝트를
+        진행하게 되었다.
+        <img src="">
+    </article>
+    <h2 id="list2">목적</h2>
+    <article style="text-align: left; font-size: 30px;">
+        본 프로젝트의 목적은, 게임이 제공하는 변수(조합)을 참조하여, 해당 조합을 사람의 지능이 아닌, 자동(AI)으로 진행하였을때 승률과 획득 점수(적 처치 수)를 분석하여, 덱을 진화시키는 것을 목적으로
+        한다.
+        최종적으로 결정된 덱을 실제 랭크게임에서 적용, 예측된 결과에 부합하는지, 그렇지 않다면 어떠한 점이 문제인지 파악하는것을 목적으로 한다.
+    </article>
+    <h2 id="list3">데이터</h2>
+    <article style="text-align: left; font-size: 30px;">
+        아래 제시된 데이터는 먼저, 게임을 돌리면서 추출한 데이터들이다. 추출 방법은 다음과 같다. <br>
+        1. 5개의 조합을 난수 생성 프로그램을 통해 생성한다.<br>
+        2. 생긴 조합 토대로 인게임에서 제공하는 디버그 모드, 자동전투를 통해 10회씩 전투를 반복한다.<br>
+        3. 반복된 조합을 통해 승률을 계산하고, 승률이 50%이상인 그룹(A)과 50%미만(B)인 그룹으로 나눈다.<br>
+        4. A와 B조합을 임의의 난수 생성 프로그램을 통해, 교배(Mating)시킨 후 승률의 변화를 확인한다. <br>
+        5. 위 방법을 3회 반복하고, 수집된 데이터를 기반으로 승률의 변화, 적 처치수의 변화, 아군 영웅 사망 수의 변화, 최종 세대의 향후 승률을 예측한다. <br>
+        <br>
+        <a href="https://github.com/applejin0105/DAP_FINAL_PROJECT/blob/main/DAP_PROJECT.csv" target='_blank'
+            style="text-align: center; padding-left: 45%;">데이터</a><br>
+    </article>
+
+    <h2 id="list4">분석 결과</h2>
+    <h2 id="list5">마치며</h2>
+    <h2 id="list6">참고자료</h2>
+
+</body>
+
+</html>
